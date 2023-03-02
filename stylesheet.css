@@ -1,13 +1,20 @@
 body {
-    background-color: rgb(41, 110, 41);
+    background-color: rgb(12, 86, 12);
 }
 h1 {
     color: burlywood;
+    font-family: 'Playfair Display', serif;
+
 }
 button {
-    background-color: burlywood;
+    background-color: bisque;
     color: black;
+    border: black;
+    font-family: 'Playfair Display', serif;
 }
 p  {
     color: burlywood;
+}
+form {
+    color:burlywood;
 }
