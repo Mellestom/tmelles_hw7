@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Health & Lifestyle Survey</h1>
-    <form action="">
+    <form>
         <fieldset>
             <legend>Contact Information</legend>
             <div></div>
@@ -32,38 +32,56 @@
         <fieldset>
         <legend>Survey Questions:</legend> 
                 <p>Please answer the following questions about your lifestyle as a college student.</p>
-                    <form>
                         
                         <p>
                             <label for="sleep">On average, how many hours of sleep do you get per night?</label>
+                            <p></p>
                             <input type="number" id="sleep" name="sleep" min="1" max="24">
                         </p>
                         <p>
-                            <label for="exercise">How often do you exercise per week?</label>
+                            <label for="exercise1">How often do you exercise per week?</label>
+                            <p></p>
                             <input type="radio" id="exercise1" name="exercise" value="0" >0 times
+                            <label for="exercise2">
                             <input type="radio" id="exercise2" name="exercise" value="1-2">1-2 times
+                            </label>
+                            <label for="exercise3">
                             <input type="radio" id="exercise3" name="exercise" value="3-4">3-4 times
+                            </label>
+                            <label for="exercise4">
                             <input type="radio" id="exercise4" name="exercise" value="5+">5+ times
+                            </label>    
                         </p>
                         <p>
                             <label for="alcohol">On average, how many alcoholic drinks do you consume per week?</label>
+                            <p></p>
                             <input type="number" id="alcohol" name="alcohol" min="0" required>
                         </p>
                         <p>
-                            <label for="smoking">Do you smoke?</label>
+                            <label for="smoking1">Do you smoke?</label>
                             <input type="radio" id="smoking1" name="smoking" value="yes">Yes
+                            <label for='smoking2'>
                             <input type="radio" id="smoking2" name="smoking" value="no">No
+                            </label>
                         </p>
                         <p>
                             <label for="stress">On a scale of 1-10, how stressed do you feel on a daily basis?</label>
+                            <p></p>
                             <input type="range" id="stress" name="stress" min="1" max="10">
                         </p>
                         <p>
-                            <label for="social">How often do you socialize with friends in person?</label>
+                            <label for="social1">How often do you socialize with friends in person?</label>
+                            <p></p>
                             <input type="radio" id="social1" name="social" value="0">0 times
+                            <label for="social2">
                             <input type="radio" id="social2" name="social" value="1-2">1-2 times per week
+                            </label>
+                            <label for="social3">
                             <input type="radio" id="social3" name="social" value="3-4">3-4 times per week
+                            </label>
+                            <label for="social4">
                             <input type="radio" id="social4" name="'social" value="4+">4+ times per week
+                            </label>
 
                             <p>
                                 <label>Which of the following activities do you regularly participate in? (Check all that apply)</label><br>
@@ -90,7 +108,7 @@
                                 <input type="text" id="other-activity" name="other-activity">
                               </p>
             </fieldset>
-                
+    </form>
     <p>
         <button onclick="window.location.href='./survey-2.html';"> Next page</button>
     </p>
