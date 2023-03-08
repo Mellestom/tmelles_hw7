@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-    <h1>Survey page 1</h1>
+    <h1>Health & Lifestyle Survey</h1>
     <form action="">
         <fieldset>
             <legend>Contact Information</legend>
@@ -28,19 +28,69 @@
                     <input id="email" type="text">
                 </label>
                 </div>
-        </fieldset>
-        <div></div>
-        <div>
-            <label for="cars">Choose a car:
-                <select name="autos" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedez">Mercedez</option>
-                    <option value="audi">Audi</option>
-                </select>
-            </label>
-        </div>
-    </form>
+            </fieldset>
+        <fieldset>
+        <legend>Survey Questions:</legend> 
+                <p>Please answer the following questions about your lifestyle as a college student.</p>
+                    <form>
+                        
+                        <p>
+                            <label for="sleep">On average, how many hours of sleep do you get per night?</label>
+                            <input type="number" id="sleep" name="sleep" min="1" max="24">
+                        </p>
+                        <p>
+                            <label for="exercise">How often do you exercise per week?</label>
+                            <input type="radio" id="exercise1" name="exercise" value="0" >0 times
+                            <input type="radio" id="exercise2" name="exercise" value="1-2">1-2 times
+                            <input type="radio" id="exercise3" name="exercise" value="3-4">3-4 times
+                            <input type="radio" id="exercise4" name="exercise" value="5+">5+ times
+                        </p>
+                        <p>
+                            <label for="alcohol">On average, how many alcoholic drinks do you consume per week?</label>
+                            <input type="number" id="alcohol" name="alcohol" min="0" required>
+                        </p>
+                        <p>
+                            <label for="smoking">Do you smoke?</label>
+                            <input type="radio" id="smoking1" name="smoking" value="yes">Yes
+                            <input type="radio" id="smoking2" name="smoking" value="no">No
+                        </p>
+                        <p>
+                            <label for="stress">On a scale of 1-10, how stressed do you feel on a daily basis?</label>
+                            <input type="range" id="stress" name="stress" min="1" max="10">
+                        </p>
+                        <p>
+                            <label for="social">How often do you socialize with friends in person?</label>
+                            <input type="radio" id="social1" name="social" value="0">0 times
+                            <input type="radio" id="social2" name="social" value="1-2">1-2 times per week
+                            <input type="radio" id="social3" name="social" value="3-4">3-4 times per week
+                            <input type="radio" id="social4" name="'social" value="4+">4+ times per week
+
+                            <p>
+                                <label>Which of the following activities do you regularly participate in? (Check all that apply)</label><br>
+                                <input type="checkbox" id="sports" name="activities" value="sports">
+                                <label for="sports">Sports</label><br>
+                                <input type="checkbox" id="volunteer" name="activities" value="volunteer">
+                                <label for="volunteer">Volunteer work</label><br>
+                                <input type="checkbox" id="job" name="activities" value="job">
+                                <label for="job">Part-time job</label><br>
+                                <input type="checkbox" id="music" name="activities" value="music">
+                                <label for="music">Music or performing arts</label><br>
+                                <input type="checkbox" id="writing" name="activities" value="writing">
+                                <label for="writing">Writing or journalism</label><br>
+                                <input type="checkbox" id="cooking" name="activities" value="cooking">
+                                <label for="cooking">Cooking or baking</label><br>
+                                <input type="checkbox" id="gaming" name="activities" value="gaming">
+                                <label for="gaming">Gaming</label><br>
+                                <input type="checkbox" id="reading" name="activities" value="reading">
+                                <label for="reading">Reading</label><br>
+                                <input type="checkbox" id="traveling" name="activities" value="traveling">
+                                <label for="traveling">Traveling</label><br>
+                                <input type="checkbox" id="other" name="activities" value="other">
+                                <label for="other">Other:</label>
+                                <input type="text" id="other-activity" name="other-activity">
+                              </p>
+            </fieldset>
+                
     <p>
         <button onclick="window.location.href='./survey-2.html';"> Next page</button>
     </p>
