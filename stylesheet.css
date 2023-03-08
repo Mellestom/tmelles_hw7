@@ -1,8 +1,8 @@
 body {
-    background-color: rgb(12, 86, 12);
+    background-color: #0c560c;
 }
 h1 {
-    color: burlywood;
+    color: #deb887;
     font-family: 'Playfair Display', serif;
 
 }
@@ -13,8 +13,15 @@ button {
     font-family: 'Playfair Display', serif;
 }
 p  {
-    color: burlywood;
+    color: #deb887;
 }
 form {
-    color:burlywood;
+    color:#deb887;
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
 }
